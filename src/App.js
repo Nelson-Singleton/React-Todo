@@ -13,6 +13,8 @@ const todos = [{
 }
 ]
 
+
+
 class App extends React.Component {
   constructor(){
     super();
@@ -28,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h2>To do list</h2>
+        <h1>To do list</h1>
         <TodoList todos = {this.state.list} />
         
       </div>

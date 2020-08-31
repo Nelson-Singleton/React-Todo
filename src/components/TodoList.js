@@ -1,19 +1,20 @@
 import React from 'react';
 import Todo from './Todo';
+import TodoForm from './TodoForm'
 
 const TodoList = (props) => {
     return(
         <div>
             {props.todos.map((item) => (
                     <Todo 
-                    key = {item.id}
-                    
+                    key = {item.id}                    
                     task = {item.task}
-
                     />
+                    
 
                 ))
             }
+            <TodoForm />
         </div>
     )
 
