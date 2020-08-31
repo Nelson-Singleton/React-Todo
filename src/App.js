@@ -5,13 +5,13 @@ const todos = [{
   task: "Study react",
   id: Date.now(),
   completed: false
-}]
-// {
-//   task: "Study Javascript",
-//   id: Date.now(),
-//   complete: false
-// }
-// ]
+},
+{
+  task: "Study Javascript",
+  id: Date.now(),
+  complete: false
+}
+]
 
 class App extends React.Component {
   constructor(){

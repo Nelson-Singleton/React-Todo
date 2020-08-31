@@ -3,7 +3,7 @@ import React from 'react'
 const Todo = (props) =>{
     return(
     <div>
-        Test
+        <p>{props.task}</p>
     </div>
     )
 }
