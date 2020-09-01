@@ -6,16 +6,7 @@ import TodoForm from './TodoForm'
 
 const TodoList = (props) => {
 
-    const addTodo = (itemName) => {
-        const newTask = {
-            task: itemName,
-            id: new Date(),
-            completed: false,
-        }
-        this.setState({
-            todos: [...this.state.todos, newTask]
-        })
-      }
+
 
       
     return(
@@ -31,7 +22,7 @@ const TodoList = (props) => {
             }
             <TodoForm 
             todos = {props.todos}
-            addTodo = {addTodo}/>
+            addTodo = {props.addTodo}/>
         </div>
     )
 

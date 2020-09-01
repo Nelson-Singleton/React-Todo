@@ -30,7 +30,7 @@ class App extends React.Component {
         completed: false,
     }
     this.setState({
-        todos: [...this.state.list, newTask]
+        list: [...this.state.list, newTask]
     })
   }
 
