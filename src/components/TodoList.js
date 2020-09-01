@@ -2,7 +2,22 @@ import React from 'react';
 import Todo from './Todo';
 import TodoForm from './TodoForm'
 
+
+
 const TodoList = (props) => {
+
+    const addTodo = (itemName) => {
+        const newTask = {
+            task: itemName,
+            id: new Date(),
+            completed: false,
+        }
+        this.setState({
+            todos: [...this.state.todos, newTask]
+        })
+      }
+
+      
     return(
         <div>
             {props.todos.map((item) => (
@@ -14,7 +29,9 @@ const TodoList = (props) => {
 
                 ))
             }
-            <TodoForm />
+            <TodoForm 
+            todos = {props.todos}
+            addTodo = {addTodo}/>
         </div>
     )
 
